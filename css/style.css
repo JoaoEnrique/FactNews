@@ -1,0 +1,968 @@
+:root
+{
+    --azul-principal: #00ADFF;
+}
+
+body
+{
+    background-size: cover;
+    overflow-x: hidden;/*tirar barra de rolagem*/
+    background: rgba(204, 245, 255, 0.336)!important;
+}
+                
+main, body/*Corpo fundo azul*/
+{ 
+    font-family: arial;
+    padding-top: 0%;
+    margin-top: 0%;
+    padding-bottom: 200px;
+    min-height: 100vh;
+} 
+
+.titulo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text-Conteudo{
+    text-align: justify;
+}
+
+
+.fundo
+{/*fundo azul da pagina index*/
+    margin-top: -30%;
+    background: rgb(204, 245, 255, 0.5);
+    margin-left: 360px;
+    padding-left: 40px;
+    margin-right: 250px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+}
+
+.fundo a{
+    color: var(--azul-principal)!important;/*Azul #00ADFF*/
+}
+
+.Conteudo
+{
+    position: relative;
+}
+
+.Div-Nome
+
+{/*div com o nome da pagina*/
+    line-height: 10%;                
+    align-items: center;
+    text-align: center;
+    background: #00ADFF!important;
+}
+    
+  
+
+
+.name/*deixar o logo Fact News com efeito*/
+{
+    line-height: 104px;
+    margin-top: 10px;
+    padding-top: 10px;
+    background-color: white;
+    font-weight: 700;
+    background-image: linear-gradient(-75deg, transparent 0, transparent 5%, #00ADFF 5%, rgba(255,255,255,0.5) 10%, transparent 10%, transparent 100%);
+    background-size: 200% 100%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: shine 3s ease-in-out infinite;
+    transition: 1s;
+    padding-bottom: -10px;
+    z-index: 9999!important;
+}
+                  
+@keyframes shine 
+{
+    0% { background-position: 0%; }
+    100% { background-position: -120%; }
+}
+    
+.name:hover, .Nome-Credito:hover/*Logo em texto Fact News*/
+{
+    text-shadow: 20px 19px 2px rgb(255 255 255 / 32%);
+} 
+    
+
+.carousel-control-next, .carousel-control-prev
+{
+    background:rgb(0, 0, 0);
+    width: 5%!important;
+}
+
+.center
+{
+    display: flex;
+    justify-content: center;
+}
+
+a.link /*links*/
+{
+    padding: none;
+    font-weight: bold;
+    color: #00ADFF;
+    text-decoration: none;
+}
+    
+a.link:hover /*links*/
+{
+    color: aqua;
+    text-decoration: none;
+}
+    
+footer /*footer azul no final*/
+{
+    top: 0px!important;
+    background-color: #00ADFF;
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: -200px!important;
+    box-shadow: 4px -20px 20px 20px #00ADFF;
+    color: #fff;
+    bottom: 0px!important;
+}
+                    
+.name
+{/*nome da pagina*/
+    font-family: Rockwell;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+  
+.link-footer, .link-footer1:hover
+{/*Links do footer*/
+    color: #fff;
+}
+
+.link-footer:hover, .link-footer1
+{/*Links do footer*/
+    color: #fff;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.noticia
+{/*Noticias da pagina index*/
+    margin-bottom: 50px;
+}
+
+.noticia-hover
+{/*Noticias da pagina index*/
+    transform: scale(1.09);
+}
+
+
+.linha
+{/*Linha separando cada tema na pagina index*/
+    margin-top: 30px;
+    margin-right: 30px;
+    height: 1px;
+    background-color: #2d2d2d;
+}
+
+.img-banner-index
+{/*Imagens para saber mais*/
+   background-color: #2d2d2d;
+   height: 100px;
+   margin-right: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   font-size: 20px;
+}
+
+    
+header
+{/*cabeçaalho*/
+    z-index: 999!important;
+    background:#00ADFF!important;
+}
+
+.img-banner-fake
+{/*Imagens para saber mais*/
+   background-color: #ff01019c;
+   height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   font-size: 20px;
+   transition: background 0.5s;
+   animation-timing-function: linear;
+}
+
+.card
+{/*card propaganda*/
+    background-image: url('/banner/4.gif');
+    background-size: cover;
+}
+
+.img-banner-fake:hover
+{/*Imagens para saber mais*/
+   background: rgba(255, 0, 0, 0.781);
+}
+
+.fato-ou-fake
+{/*titulo da pagina fato ou fake*/
+    top: 0px!important;
+    text-align: center;
+    color: green;
+}
+
+
+/* MENU DE NAVEGACAO*/
+.fixed-top, nav, .navbar
+{/*Menu*/
+    padding-top: 0px!important;
+    top: 0px!important;
+    padding: 0px!important;
+    background: #00ADFF!important;
+    font-weight: 500;
+    z-index: 999!important;
+}
+
+.dropdown-item
+{/*Menu*/
+    font-weight: 500!important;
+}
+
+.dropdown-item:hover, .dropdown-item.active, .dropdown-item:active, option:hover
+{/*Menu*/
+    background: #00ADFF!important;
+    color: #fff!important;
+}
+/*MENU DE NAVEGACAO*/
+
+.destaque{/*texto em destaque*/
+    text-decoration: none;
+    color: #00ADFF;
+    font-weight: bold;
+        
+}
+
+textarea/*Campo de mensagem da pagina contato*/
+{
+    resize: none!important;
+    height: 150px!important;
+}
+
+
+
+/*************FORMULARIO************/
+.btn-enviar/*Botao de enviar no formulario*/
+{
+    display: flex;
+    background-color: #00ADFF;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    color: white;
+    margin-bottom: 30px;
+    align-items: center;
+    width: 100px;
+    box-shadow: 3px 3px #000;
+    transition: 1s;
+    animation-name: animacao;
+}
+
+.btn-enviar:hover
+{
+    box-shadow: none;
+    transition: box-shadow 1s;
+}
+
+.btn-enviar:active
+{
+    opacity: 0.5;
+}
+
+.formulario
+{/*Div principal do formuario (Borda esquerda preta)*/
+    border-radius: 10px;
+    border-left: 5px solid black;
+    padding: 10px;
+    background: #fff;
+}
+
+#form
+{/*Alinhar o formulario*/
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 17px;
+}
+ 
+        
+        
+.red
+{/*texto em vermelho*/
+    line-height: 0px;
+    color: red;
+}
+/*************FORMULARIO************/
+
+
+*::selection, p::selection, w::selection, a::selection, img::selection{/*Seleção de texto e imagem*/
+    color:#fff;
+    background: #00ADFF;
+}
+
+
+/****Pagina Fato ou Fake****/
+.text-left .card
+{
+    cursor: zoom-in;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+.text-left .card:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+/****Pagina Fato ou Fake****/
+
+
+footer *::selection
+{/*Efeito no footer*/
+    background:#fff;
+    color: #00ADFF;
+}
+
+.row, .div-padding .col-sm-4, .container
+{
+    padding-left: 0px!important;
+    left: 0px!important;
+    margin: 0px!important;
+    padding-right: 0px!important;
+    right: 0px!important;
+    margin: 0px!important;
+}
+
+
+/**********************Banners****************************/
+.Banner
+{/*Banners*/
+    background: red;
+    width:300px;
+}
+
+.img-logo
+{/*Imagem no menu*/
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    transition: 1s;
+}
+
+.alinhar-conteudo
+{
+    margin-right: 300px;
+}
+
+.img-logo-hover
+{/*Imagem ao descer a pagina*/
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+
+
+.banner-nivel-conteudo
+{/*Banner horizontal*/
+    min-width: 100%;
+    height: 100px;
+    z-index: 100!important;
+    margin-top: -30px!important; 
+    background-image: url('data:image/webp;base64,UklGRmwAAABXRUJQVlA4WAoAAAAQAAAABAAABAAAQUxQSBYAAAABDzAhERFCadtIbAwea/+oRfQ/GvwBVlA4IDAAAACQAQCdASoFAAUAAgA0JaQAApplHeAA/tPpPS2F/PjfDX7Mr9vZ2Xy98v/pAAAAAAA=')!important;
+    color: #00ADFF;
+    font-size: 20px;
+    text-shadow: 0px 0px #000;
+    justify-content: center;
+    text-align: center;
+    display: flex!important;
+    align-items: center!important;
+}
+
+.banner-nivel-conteudo-1
+{/*Banner Vertical*/
+    cursor: pointer!important;
+    position: sticky;
+    top: 5px;
+    width:305px; 
+    height:100vh;
+    left: 90%;
+    margin-top: -720px!important;
+    background-image: url('data:image/webp;base64,UklGRmwAAABXRUJQVlA4WAoAAAAQAAAABAAABAAAQUxQSBYAAAABDzAhERFCadtIbAwea/+oRfQ/GvwBVlA4IDAAAACQAQCdASoFAAUAAgA0JaQAApplHeAA/tPpPS2F/PjfDX7Mr9vZ2Xy98v/pAAAAAAA=')!important;
+    color: #00ADFF;
+    font-size: 20px;
+    text-shadow: 0px 0px #000;
+    justify-content: center;
+    text-align: center;
+    display: flex!important;
+    align-items: center!important;
+    z-index: -1!important;
+    
+}
+
+.banner-nivel-conteudo-2
+{/*Banner Vertical*/
+    cursor: pointer!important;
+    position: sticky;
+    top: 5px;
+    width:305px; 
+    height:100vh;
+    left: 90%;
+    margin-top: -720px!important;
+    background-image: url('banner/1.gif');
+    color: #00ADFF;
+    font-size: 20px;
+    text-shadow: 0px 0px #000;
+    justify-content: center;
+    text-align: center;
+    display: flex!important;
+    align-items: center!important;
+    z-index: -1!important;
+}
+
+
+.Banner-1-fixo, .img-logo/*Impedir de arrastar os banners*/
+{
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-zoom: none;
+    -webkit-touch-callout: none;
+}
+
+.banner-nivel-2
+{
+    color: #fff;
+    top: 320px!important;
+    width: 100%;
+    height: 300px;
+    border: 2px solid #000;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-zoom: none;
+    -webkit-touch-callout: none;
+}
+
+.banner-sobre
+{
+    color: #fff;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    width: 70%;
+    height: 100%;
+    border: 2px solid #000;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-zoom: none;
+    -webkit-touch-callout: none;
+}
+
+.banner-carousel
+{
+    cursor: pointer!important;
+    border: 2px solid #000;
+    height:100%;
+    right: 5px;
+}
+
+.Banner-01-fixo
+{
+    cursor: pointer!important;
+    position: sticky;
+    top: 75px;
+    width:305px; 
+    height:100%;
+    left: 5px;
+    bottom: -500px!important;
+ }
+
+.Banner-1-fixo
+{
+    cursor: pointer!important;
+    position: sticky;
+    border-radius: 2px;
+    top: 75px;
+    width:305px; 
+    height:100%;
+    left: 5px;
+    bottom: -500px!important;
+    z-index: 888!important;
+}
+
+
+
+.banner-sobre
+{
+    color: #fff;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    width: 70%;
+    height: 100%;
+    border: 2px solid #000;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-zoom: none;
+    -webkit-touch-callout: none;
+}
+/**********************Banners****************************/
+
+
+/************TEXTOS***********/
+.text
+{/*texto da pagina sobre*/
+    margin: 10px 50px 0px 50px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*Texto da página doacao*/
+.text-4
+{/*texto da pagina contato*/
+    margin-top: 1px!important;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 17px;
+}
+/************TEXTOS***********/
+
+.slide
+{/*Carousel*/
+    margin-bottom: 100px;
+}
+
+html 
+{
+  scroll-behavior: smooth;
+}
+ 
+:target 
+{
+  scroll-margin-top: .8em;
+}
+
+.content
+{
+    margin-top: -16px;
+}
+
+.esconder
+{
+    display: contents;
+}
+
+.Enviar-Banner
+{
+    background-color: #fff;
+    width:400px;
+    height:300px;
+    display: flex!important;
+    align-items: center!important;
+    padding: 50px;
+    color: #000;
+    cursor: pointer;
+    box-shadow: inset 0 0 40px 0 #000;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s linear;
+}
+
+.Enviar-Banner:hover
+{
+    box-shadow: inset 0 0 40px 0 #000;
+}
+
+.btn-banner
+{
+    background-color: #00ADFF;
+    color: #fff;
+    
+}
+
+/* MODO ESCURO */
+
+#switch
+{
+    display: contents;
+}
+
+.content .toggle{
+    position: absolute;
+    width:40px;
+    height: 20px;
+    background-color: #fff;
+    display: flex;
+    right: 10px;
+    border-radius: 20px;
+    align-items: center;
+    position: fixed;
+    margin-top: -180px;
+    z-index:9999;
+    cursor: pointer;
+}
+
+
+/* MODO ESCURO */
+
+.toggle .circle
+{ 
+    width: 16px;
+    height: 16px;
+    background-color: #00ADFF;
+    border-radius: 50%;
+    margin-left: 3px;
+    transition: all  0.35s ease;
+    cursor: pointer;
+}
+
+#switch:checked ~ .outer .circle
+{
+    margin-left: 22px;
+}
+
+
+#switch:checked ~ .outer .content
+{/*Fundo da pagina index após ativar o modo escuro*/
+    background-color: rgb(37, 37, 38);
+}
+
+#switch:checked ~ .outer .fundo
+{/*Fundo do conteudo da pagina index após ativar o modo escuro*/
+    background-color: #fff;
+}
+
+#switch:checked ~ .outer .noticia
+{/*Fundo do conteudo da pagina index após ativar o modo escuro*/
+    background-color: #fff;
+}
+
+#switch:checked ~ .outer main
+{/*Fundo da tela após ativar o modo escuro*/
+    background-color: rgb(37, 37, 38)!important;
+    box-shadow: 1px 20px 0 20px rgb(37, 37, 38);
+}
+
+#switch:checked ~ .outer .text
+{/*texto após ativar o modo escuro*/
+    color: white;
+}
+
+#switch:checked ~ .outer .text-sobre
+{/*texto após ativar o modo escuro*/
+    color: #fff!important;
+}
+
+#switch:checked ~ .outer .toggle
+{/*botão do modo escuro após ser ativado*/
+    background-color: #00ADFF!important;
+    border: 2px solid #fff;
+}
+
+#switch:checked ~ .outer .circle
+{/*Circulo do modo escuro após ser ativado*/
+    background-color: #fff!important;
+}
+
+.img-carousel
+{
+    width: 100%;
+    height: 100%;
+}
+
+/***************************************************RESPONSIVIDADE********************************************************/
+
+/**********************RESPONSIVIDADE**********************************/
+
+@media screen and (max-width: 905px)/*ADAPTAÃ‡ÃƒO PARA DISPOSITIVOS*/
+{
+    .Banner-1-fixo
+    {
+        top: 70px;
+        width:100px; 
+        height:100%;
+        left: 10px;
+        bottom: -500px!important;
+    }
+
+    #switch:checked ~ .outer .fundo
+    {/*Fundo do conteudo da pagina index após ativar o modo escuro*/
+        background-color: rgb(37, 37, 38);
+    }
+
+    #switch:checked ~ .outer .noticia
+    {/*Fundo do conteudo da pagina index após ativar o modo escuro*/
+        background-color: rgba(37, 37, 38, 0);
+    }
+
+    #switch:checked ~ .outer p
+    {/*Fundo do conteudo da pagina index após ativar o modo escuro*/
+        color: #fff;
+    }
+
+    #switch:checked ~ .outer h1
+    {/*Fundo do conteudo da pagina index após ativar o modo escuro*/
+        color: #fff;
+    }
+
+    #switch:checked ~ .outer .img-banner-index
+    {/*Fundo do conteudo da pagina index após ativar o modo escuro*/
+        background-color: rgb(131, 131, 131);
+    }
+
+    
+
+    .alinhar
+    {
+        margin-left: 150px!important;
+    }
+
+    h1
+    {
+        font-size: 25px!important;
+    }
+    
+    .text/*paragrafos*/
+    {
+        font-size: 15px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .Foto-Joao/*Foto da página index*/
+    {
+        width: 150px
+    }
+    
+    .name/*deixar o logo Fact News com efeito*/
+    {
+        font-family: Rockwell;
+        font-size: 35px;
+    }
+    
+    .Sub-Titulo
+    {
+        font-size: 15px;
+    }
+    
+    .HTML-css
+    {
+        width: 150px;
+        height: 150px;
+    }
+    
+    
+    header
+    {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    
+    #certificado
+    {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .baixar
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .banner-nivel-conteudo-1
+    {/*Banner Vertical*/
+        cursor: pointer!important;
+        position: sticky;
+        top: 5px;
+        width:105px; 
+        height:90vh;
+        left: 90%;
+        margin-top: -720px!important;
+        background-image: url('data:image/webp;base64,UklGRmwAAABXRUJQVlA4WAoAAAAQAAAABAAABAAAQUxQSBYAAAABDzAhERFCadtIbAwea/+oRfQ/GvwBVlA4IDAAAACQAQCdASoFAAUAAgA0JaQAApplHeAA/tPpPS2F/PjfDX7Mr9vZ2Xy98v/pAAAAAAA=')!important;
+        color: #00ADFF;
+        font-size: 20px;
+        text-shadow: 0px 0px #000;
+        justify-content: center;
+        text-align: center;
+        display: flex!important;
+        align-items: center!important;
+        z-index: -1!important;
+        
+    }
+
+    .text-center
+    {
+        margin:0px;
+    }
+    
+    h1
+    {
+        font-size: 15px;
+    }
+
+    p
+    {
+        margin: 0px!important;
+        font-size: 10px;
+    }
+
+    .alinhar-conteudo
+    {
+        margin-right:100px;
+    }
+
+    .content .toggle
+    {
+        margin-top: -150px;
+    }
+
+}
+
+
+.none-cell
+{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 915px)/*ADAPTAÃ‡ÃƒO PARA DISPOSITIVOS*/
+{
+    .fundo
+    {
+    margin-top: -35%;
+    background: rgb(204, 245, 255, 0.5);
+    margin-left: 200px;
+    padding-left: 0px;
+    margin-right: 10px;
+    padding-right: 10px;
+    }
+
+    .Banner-1-fixo
+    {
+        top: 70px;
+        width: 200px; 
+        height:100%;
+        left: 10px;
+        bottom: -500px!important;
+    }
+}
+
+@media screen and (max-width: 480px)/*ADAPTAÃ‡ÃƒO PARA DISPOSITIVOS*/
+{
+    .cel-none
+    {
+        display: none;
+    }
+    
+    .fundo
+    {
+    margin-top: -35%;
+    background: rgb(204, 245, 255, 0.5);
+    margin-left: 10px;
+    padding-left: 0px;
+    margin-right: 10px;
+    padding-right: 10px;
+    }
+
+    .Banner-1-fixo
+    {
+        top: 70px;
+        width: 80px; 
+        height:100%;
+        left: 10px;
+        bottom: -500px!important;
+    }
+}
+
+@media screen and (max-width: 680px)/*ADAPTAÃ‡ÃƒO PARA DISPOSITIVOS*/
+{
+    #form
+    {
+        margin: 30px;
+    }
+
+    .titulo-conteudo
+    {
+        margin-top: 150px;
+        font-size: 20px !important;
+    }
+
+    .text-Conteudo
+    {
+        font-size: 15px!important;
+        margin: 0px 10px;
+    }
+}
+
+@media screen and (max-width: 280px)/*ADAPTAÃ‡ÃƒO PARA DISPOSITIVOS*/
+{
+    .Banner-1-fixo
+    {
+        display: none;
+    }
+
+    .fundo
+    {
+    margin-top: -35%;
+    background: rgb(204, 245, 255, 0.5);
+    margin-left: -140px;
+    padding-left: 0px;
+    margin-right: 0px;
+    padding-right: 5px;
+    }
+}
+
+
+@media screen and (max-width: 488px)/*ADAPTAÃ‡ÃƒO PARA DISPOSITIVOS*/
+{
+    .fundo
+    {
+    margin-top: -35%;
+    background: rgb(204, 245, 255, 0.5);
+    margin-left: -30px;
+    padding-left: 0px;
+    margin-right: 0px;
+    padding-right: 5px;
+    }
+
+
+    .Banner-1-fixo
+    {
+        top: 70px;
+        width: 75px; 
+        height:100%;
+        left: 10px;
+        bottom: -500px!important;
+    }
+}
